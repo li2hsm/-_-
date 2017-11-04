@@ -1,0 +1,180 @@
+<resources>
+    <string name="app_name">Twenty</string>
+    <!--首页-->
+    <string-array name="chapter_list">
+        <item>第二章,Android应用的界面编程</item>
+        <item>四大组件</item>
+        <item>所有问题汇总</item>
+    </string-array>
+    <string-array name="first_activitys_list">
+        <item>chapters02.Chapter02Activity</item>
+        <item>fours_zujian.FoursSubActivity</item>
+        <item>questions.AllQuestionsActivity</item>
+    </string-array>
+
+    <!--所有的问题再现，与解决-->
+    <string-array name="questions_list">
+        <item>JsonErrorActivity   - 子类和父类有相同的id的变量声明,json解析报错</item>
+    </string-array>
+    <string-array name="question_action_list">
+        <item>questions.JsonErrorActivity</item>
+    </string-array>
+
+    <!--四大组件-->
+    <string-array name="fours_list">
+        <item>HSScreanActivity   - 横竖屏切换，数据保存</item>
+        <item>IntentActivity   - Intent与过滤器</item>
+    </string-array>
+    <string-array name="fours_action_list">
+        <item>fours_zujian.HSScreanActivity</item>
+        <item>fours_zujian.IntentActivity</item>
+    </string-array>
+
+    <!--第二章-->
+    <string-array name="chapter02_list">
+        <item>CodeViewActivity   - 代码创建activity界面</item>
+        <item>CustomViewActivity - 自定义view根据手指滑动，变换位置</item>
+        <item>ImageViewActivity  - Imageview的用法</item>
+        <item>AbsoluteLayoutTest - AbsoluteLayout绝对布局的用法</item>
+        <item>FrameLayoutTest    - FrameLayout叠布局的用法</item>
+        <item>GridLayoutTest     - GridLayout网格布局的用法</item>
+        <item>LinearLayoutTest   - LinearLayout线性布局的用法</item>
+        <item>RelativeLayoutTest - RelativeLayout相对布局的用法</item>
+        <item>TableLayoutTest    - TableLayout相对布局的用法</item>
+        <item>ButtonTest         - Button的用法</item>
+        <item>CheckButtonTest    - CheckButton单选按钮,checkbox多选按钮的用法</item>
+        <item>ChronometerTest    - Chronometer计时器的用法</item>
+        <item>ClockTest          - Clock时钟的用法</item>
+        <item>InputUI            - EditText的输入模式用法</item>
+        <item>NinePatchTest      - 点9图片的用法</item>
+        <item>TextViewTest       - TextView的用法</item>
+        <item>TextViewTest       - TextView的圆角边框用法</item>
+        <item>ToggleButtonTest   - ToggleButton,Switch开关按钮的用法</item>
+        <item>ImageButtonTest    - ImageButton的用法</item>
+        <item>ImageViewTest      - ImageView更改透明度的用法</item>
+        <item>QuickContactBadgeTest - QuickContactBadge添加陌生号码到联系人的用法</item>
+        <item>AdapterViewFlipperTest - AdapterViewFlipper可带切换动画的页面切换容器的用法</item>
+        <item>ArrayAdapterTest   - ArrayAdapter简单字符串列表的用法</item>
+        <item>AutoCompleteTextViewTest   - AutoCompleteTextView自动完成输入框的用法</item>
+        <item>BaseAdapterTest   - BaseAdapter自定义adapter的用法</item>
+        <item>ExpandableListViewTest   - ExpandableListView树结构listview的用法</item>
+        <item>ListActivityTest     - ListActivity的使用</item>
+        <item>SimpleAdapterTest   - SimpleAdapter根据item布局的组件id设置对应的资源的用法</item>
+        <item>SimpleListViewTest   - SimpleListView直接用android:entries给字符串数组的用法</item>
+        <item>SpinnerTest   - Spinner下拉列表的用法</item>
+        <item>StackViewTest   - StackView层叠列表，可滑动删除添加的用法</item>
+        <item>ProgressBarTest   - ProgressBar进度条的用法</item>
+        <item>RatingBarTest   - RatingBar五星评分的用法</item>
+        <item>SeekBarTest   - SeekBar拖动改变属性值的用法</item>
+        <item>TitleProgressBar   - TitleProgressBar的用法（有问题显示不出来）</item>
+        <item>ImageSwitcherTest   - ImageSwitcher带切换动画的imageview的用法</item>
+        <item>TextSwitcherTest   - TextSwitcher带切换动画的textview的用法</item>
+        <item>ViewFlipperTest   - ViewFlipper带切换动画的ViewFlipper的用法</item>
+        <item>ViewSwitcherTest   - ViewSwitcher带切换动画的ViewSwitcher的用法</item>
+        <item>CalendarViewTest   - CalendarViewTest系统日历的用法</item>
+        <item>ChooseDate   - ChooseDate选择日期的用法(5.1及以下的系统可用)</item>
+        <item>NotificationTest   - Notification通知的用法</item>
+        <item>NumberPickerTest   - NumberPicker 3D数字选择器的用法</item>
+        <item>ScrollViewTest   - ScrollView垂直滚动,HorizontalScrollView水平滚动的用法</item>
+        <item>SearchViewTest   - SearchView输入搜索框的用法</item>
+        <item>TabHostTest   - TabHost顶部tab可切换布局的用法</item>
+        <item>ToastTest   - Toast的用法</item>
+        <item>AlertDialogTest   - AlertDialog对话框的用法</item>
+        <item>DateDialogTest   - DateDialog日期，时间选择对话框的用法</item>
+        <item>DialogTheme   - DialogTheme对话框的用法</item>
+        <item>PopupWindowTest   - PopupWindow非阻塞对话框的用法</item>
+        <item>ProgressDialogTest   - ProgressDialog对话框的用法</item>
+        <item>ActivityMenu   - ActivityMenu菜单的用法</item>
+        <item>ContextMenuTest   - ContextMenu上下文菜单的用法</item>
+        <item>MenuResTest   - MenuRes xml创建上下文菜单的用法</item>
+        <item>MenuTest   - Menu菜单的用法</item>
+        <item>PopupMenuTest   - PopupMenu菜单的用法</item>
+        <item>ActionBar_DropDownNav   - ActionBar_DropDownNav Actionbar下拉选择列表的用法</item>
+        <item>ActionBar_SwipeNav   - ActionBar_SwipeNav的用法</item>
+
+    </string-array>
+    <string-array name="chapter02_activitys_list">
+        <item>chapters02.CodeViewActivity</item>
+        <item>chapters02.CustomViewActivity</item>
+        <item>chapters02.ImageViewActivity</item>
+        <item>chapters02.AbsoluteLayoutTest</item>
+        <item>chapters02.FrameLayoutTest</item>
+        <item>chapters02.GridLayoutTest</item>
+        <item>chapters02.LinearLayoutTest</item>
+        <item>chapters02.RelativeLayoutTest</item>
+        <item>chapters02.TableLayoutTest</item>
+        <item>chapters02.ButtonTest</item>
+        <item>chapters02.CheckButtonTest</item>
+        <item>chapters02.ChronometerTest</item>
+        <item>chapters02.ClockTest</item>
+        <item>chapters02.InputUI</item>
+        <item>chapters02.NinePatchTest</item>
+        <item>chapters02.TextViewTest</item>
+        <item>chapters02.TextViewTest2</item>
+        <item>chapters02.ToggleButtonTest</item>
+        <item>chapters02.ImageButtonTest</item>
+        <item>chapters02.ImageViewTest</item>
+        <item>chapters02.QuickContactBadgeTest</item>
+        <item>chapters02.AdapterViewFlipperTest</item>
+        <item>chapters02.ArrayAdapterTest</item>
+        <item>chapters02.AutoCompleteTextViewTest</item>
+        <item>chapters02.BaseAdapterTest</item>
+        <item>chapters02.ExpandableListViewTest</item>
+        <item>chapters02.ListActivityTest</item>
+        <item>chapters02.SimpleAdapterTest</item>
+        <item>chapters02.SimpleListViewTest</item>
+        <item>chapters02.SpinnerTest</item>
+        <item>chapters02.StackViewTest</item>
+        <item>chapters02.ProgressBarTest</item>
+        <item>chapters02.RatingBarTest</item>
+        <item>chapters02.SeekBarTest</item>
+        <item>chapters02.TitleProgressBar</item>
+        <item>chapters02.ImageSwitcherTest</item>
+        <item>chapters02.TextSwitcherTest</item>
+        <item>chapters02.ViewFlipperTest</item>
+        <item>chapters02.ViewSwitcherTest</item>
+        <item>chapters02.CalendarViewTest</item>
+        <item>chapters02.ChooseDate</item>
+        <item>chapters02.NotificationTest</item>
+        <item>chapters02.NumberPickerTest</item>
+        <item>chapters02.ScrollViewTest</item>
+        <item>chapters02.SearchViewTest</item>
+        <item>chapters02.TabHostTest</item>
+        <item>chapters02.ToastTest</item>
+        <item>chapters02.AlertDialogTest</item>
+        <item>chapters02.DateDialogTest</item>
+        <item>chapters02.DialogTheme</item>
+        <item>chapters02.PopupWindowTest</item>
+        <item>chapters02.ProgressDialogTest</item>
+        <item>chapters02.ActivityMenu</item>
+        <item>chapters02.ContextMenuTest</item>
+        <item>chapters02.MenuResTest</item>
+        <item>chapters02.MenuTest</item>
+        <item>chapters02.PopupMenuTest</item>
+        <item>chapters02.ActionBar_DropDownNav</item>
+        <item>chapters02.ActionBar_SwipeNav</item>
+    </string-array>
+
+    <string name="ok">OK</string>
+    <string name="tip">请选择您喜欢的人物</string>
+
+    <!--LinearLayoutTest-->
+    <string name="bn1">按钮一</string>
+    <string name="bn2">按钮二</string>
+    <string name="bn3">按钮三</string>
+    <string name="bn4">按钮四</string>
+    <string name="bn5">按钮五</string>
+
+    <string name="red_title">红色</string>
+    <string name="blue_title">蓝色</string>
+    <string name="green_title">绿色</string>
+    <string name="font_size">字体大小</string>
+    <string name="font_color">字体颜色</string>
+    <string name="plain_item">普通菜单项</string>
+    <string name="font_10">10号字体</string>
+    <string name="font_12">12号字体</string>
+    <string name="font_14">14号字体</string>
+    <string name="font_16">16号字体</string>
+    <string name="font_18">18号字体</string>
+
+</resources>

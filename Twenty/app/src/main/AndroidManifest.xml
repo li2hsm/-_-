@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sw0039.twenty">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".FirstActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 第二章的部分 -->
+        <activity android:name=".chapters02.Chapter02Activity" />
+        <activity android:name=".chapters02.CodeViewActivity" />
+        <activity android:name=".chapters02.CustomViewActivity" />
+        <activity android:name=".chapters02.ImageViewActivity" />
+        <activity android:name=".chapters02.AbsoluteLayoutTest" />
+        <activity android:name=".chapters02.FrameLayoutTest" />
+        <activity android:name=".chapters02.GridLayoutTest" />
+        <activity android:name=".chapters02.LinearLayoutTest" />
+        <activity android:name=".chapters02.RelativeLayoutTest" />
+        <activity android:name=".chapters02.TableLayoutTest" />
+        <activity android:name=".chapters02.ButtonTest" />
+        <activity android:name=".chapters02.CheckButtonTest" />
+        <activity android:name=".chapters02.ChronometerTest" />
+        <activity android:name=".chapters02.ClockTest" />
+        <activity android:name=".chapters02.InputUI" />
+        <activity android:name=".chapters02.NinePatchTest" />
+        <activity android:name=".chapters02.TextViewTest" />
+        <activity android:name=".chapters02.TextViewTest2" />
+        <activity android:name=".chapters02.ToggleButtonTest" />
+        <activity android:name=".chapters02.ImageButtonTest" />
+        <activity android:name=".chapters02.ImageViewTest" />
+        <activity android:name=".chapters02.QuickContactBadgeTest" />
+        <activity android:name=".chapters02.AdapterViewFlipperTest" />
+        <activity android:name=".chapters02.ArrayAdapterTest" />
+        <activity android:name=".chapters02.AutoCompleteTextViewTest" />
+        <activity android:name=".chapters02.BaseAdapterTest" />
+        <activity android:name=".chapters02.ExpandableListViewTest" />
+        <activity android:name=".chapters02.ListActivityTest" />
+        <activity android:name=".chapters02.SimpleAdapterTest" />
+        <activity android:name=".chapters02.SimpleListViewTest" />
+        <activity android:name=".chapters02.SpinnerTest" />
+        <activity android:name=".chapters02.StackViewTest" />
+        <activity android:name=".chapters02.ProgressBarTest" />
+        <activity android:name=".chapters02.RatingBarTest" />
+        <activity android:name=".chapters02.SeekBarTest" />
+        <activity android:name=".chapters02.TitleProgressBar" />
+        <activity android:name=".chapters02.ImageSwitcherTest" />
+        <activity android:name=".chapters02.TextSwitcherTest" />
+        <activity android:name=".chapters02.ViewFlipperTest" />
+        <activity android:name=".chapters02.ViewSwitcherTest" />
+        <activity android:name=".chapters02.CalendarViewTest" />
+        <activity android:name=".chapters02.ChooseDate" />
+        <activity android:name=".chapters02.NotificationTest" />
+        <activity android:name=".chapters02.OtherActivity" />
+        <activity android:name=".chapters02.NumberPickerTest" />
+        <activity android:name=".chapters02.ScrollViewTest" />
+        <activity android:name=".chapters02.SearchViewTest" />
+        <activity android:name=".chapters02.TabHostTest" />
+        <activity android:name=".chapters02.ToastTest" />
+        <activity android:name=".chapters02.AlertDialogTest" />
+        <activity android:name=".chapters02.DateDialogTest" />
+        <activity android:name=".chapters02.DialogTheme" />
+        <activity android:name=".chapters02.PopupWindowTest" />
+        <activity android:name=".chapters02.ProgressDialogTest" />
+        <activity android:name=".chapters02.ActivityMenu" />
+        <activity android:name=".chapters02.ContextMenuTest" />
+        <activity android:name=".chapters02.MenuResTest" />
+        <activity android:name=".chapters02.MenuTest" />
+        <activity android:name=".chapters02.PopupMenuTest" />
+        <activity android:name=".chapters02.ActionBar_DropDownNav" />
+        <activity android:name=".chapters02.ActionBar_SwipeNav" />
+        <activity android:name=".fours_zujian.HSScreanActivity" />
+        <activity android:name=".fours_zujian.FoursSubActivity" />
+        <activity android:name=".questions.AllQuestionsActivity" />
+        <activity android:name=".questions.JsonErrorActivity" />
+        <activity android:name=".QuickContactBadgeActivity" />
+        <activity android:name=".SearchViewActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".BaseCenterTextActivity" />
+        <activity android:name=".fours_zujian.IntentActivity"></activity>
+    </application>
+
+</manifest>
