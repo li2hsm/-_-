@@ -15,9 +15,11 @@
     <!--所有的问题再现，与解决-->
     <string-array name="questions_list">
         <item>JsonErrorActivity   - 子类和父类有相同的id的变量声明,json解析报错</item>
+        <item>JavaCirculateDoubleActivity   - 两个double类型数据的比较</item>
     </string-array>
     <string-array name="question_action_list">
         <item>questions.JsonErrorActivity</item>
+        <item>questions.JavaCirculateDoubleActivity</item>
     </string-array>
 
     <!--四大组件-->
@@ -91,7 +93,6 @@
         <item>PopupMenuTest   - PopupMenu菜单的用法</item>
         <item>ActionBar_DropDownNav   - ActionBar_DropDownNav Actionbar下拉选择列表的用法</item>
         <item>ActionBar_SwipeNav   - ActionBar_SwipeNav的用法</item>
-
     </string-array>
     <string-array name="chapter02_activitys_list">
         <item>chapters02.CodeViewActivity</item>

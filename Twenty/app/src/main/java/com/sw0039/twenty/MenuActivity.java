@@ -87,10 +87,8 @@ public class MenuActivity extends AppCompatActivity {
         colorMenu.add(0,font_red,0,"红色字体");
         colorMenu.add(0,font_green,0,"绿色字体");
         colorMenu.add(0,font_blue,0,"蓝色字体");
-
         return super.onCreateOptionsMenu(menu);
     }
-
     //选项菜单的点击监听器
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -114,7 +112,6 @@ public class MenuActivity extends AppCompatActivity {
             case font_16:
                 mTextView.setTextSize(16*3);
                 break;
-
             case PLAN_FORM:
                 mTextView.setText("普通菜单");
                 break;

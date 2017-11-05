@@ -17,10 +17,10 @@ public class BaseCenterTextActivity extends AppCompatActivity {
     /**
      * 传递信息的key
      */
-    public static String MSG = "msg";
+    public final static String MSG = "msg";
 
     @BindView(R.id.textView)
-    TextView mText;
+    public TextView mText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

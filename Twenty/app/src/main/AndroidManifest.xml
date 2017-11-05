@@ -86,7 +86,8 @@
         <activity android:name=".SearchViewActivity" />
         <activity android:name=".MenuActivity" />
         <activity android:name=".BaseCenterTextActivity" />
-        <activity android:name=".fours_zujian.IntentActivity"></activity>
+        <activity android:name=".fours_zujian.IntentActivity" />
+        <activity android:name=".questions.JavaCirculateDoubleActivity"></activity>
     </application>
 
 </manifest>
