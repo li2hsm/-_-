@@ -57,7 +57,6 @@ public class BaseRecyclerViewActivity extends AppCompatActivity {
 
     /**
      * 添加数据
-     *
      * @param arrays
      */
     public void addDatas(String[] arrays, String[] activityArrays) {

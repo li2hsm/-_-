@@ -136,7 +136,7 @@ public class HSScreanActivity extends Activity {
 //        return mydata;
 //    }
 //
-//    //界面销毁之前收集数据
+//    //横竖屏切换时，界面销毁之前收集数据
 //    //在onstop和ondesdroy之间调用。
     @Override
     public Object onRetainNonConfigurationInstance() {
@@ -158,7 +158,7 @@ public class HSScreanActivity extends Activity {
 //    }
     //----end---------onRetainNonConfigurationInstance()保存数据-----------------------
 
-    //-----start--------onRetainNonConfigurationInstance()保存数据-----------------------
+    //-----start--------onSaveInstanceState()保存数据-----------------------
     //保存数据
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
@@ -177,7 +177,7 @@ public class HSScreanActivity extends Activity {
         String ad = "activity 被系统回收了怎么办？";
         outState.putString("str",ad);
     }
-    //-----end--------onRetainNonConfigurationInstance()保存数据-----------------------
+    //-----end--------onSaveInstanceState()保存数据-----------------------
 
 
     /**

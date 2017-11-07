@@ -63,7 +63,7 @@ public class JavaCirculateDoubleActivity extends BaseCenterTextActivity {
      * @return Sting
      */
     public String formatFloatNumber(double value) {
-        if (value != -0.00d && value != 0.00d) {
+        if (value < -0.00d || value > 0.00d) {
             BigDecimal digit = new BigDecimal(value);
             java.text.DecimalFormat df = new java.text.DecimalFormat("########.00000000");
             return df.format(digit);

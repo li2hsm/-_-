@@ -1,13 +1,10 @@
 package com.sw0039.twenty.chapters02;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 
 import com.sw0039.twenty.R;
@@ -24,16 +21,18 @@ public class ActionBar_DropDownNav extends AppCompatActivity implements
 		setContentView(R.layout.test_actionbar_dropdownnav);
 
 		final ActionBar actionBar = getSupportActionBar();
-		// 设置ActionBar是否显示标题
-		actionBar.setDisplayShowTitleEnabled(true);
-		// 设置导航模式，使用List导航
-		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
-		// 为actionBar安装ArrayAdapter
-		actionBar.setListNavigationCallbacks(
-			new ArrayAdapter<String>(this,
-				android.R.layout.simple_list_item_1,
-				android.R.id.text1, new String[]
-				{"第一页","第二页","第三页" }), this);
+		if(null!=actionBar){
+			// 设置ActionBar是否显示标题
+			actionBar.setDisplayShowTitleEnabled(true);
+			// 设置导航模式，使用List导航
+			actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
+			// 为actionBar安装ArrayAdapter
+			actionBar.setListNavigationCallbacks(
+					new ArrayAdapter<String>(this,
+							android.R.layout.simple_list_item_1,
+							android.R.id.text1, new String[]
+							{"第一页","第二页","第三页" }), this);
+		}
 	}
 	@Override
 	public void onRestoreInstanceState(Bundle savedInstanceState)
@@ -41,16 +40,22 @@ public class ActionBar_DropDownNav extends AppCompatActivity implements
 		if (savedInstanceState.containsKey(SELECTED_ITEM))
 		{
 			// 选中前面保存的索引对应的Fragment页
-			getActionBar().setSelectedNavigationItem(
-					savedInstanceState.getInt(SELECTED_ITEM));
+			android.app.ActionBar actionBar = getActionBar();
+			if(null!=actionBar){
+				actionBar.setSelectedNavigationItem(
+						savedInstanceState.getInt(SELECTED_ITEM));
+			}
 		}
 	}
 	@Override
 	public void onSaveInstanceState(Bundle outState)
 	{
 		// 将当前选中的Fragment页的索引保存到Bundle中
-		outState.putInt(SELECTED_ITEM,
-				getActionBar().getSelectedNavigationIndex());
+		android.app.ActionBar actionBar = getActionBar();
+		if(null!=actionBar){
+			outState.putInt(SELECTED_ITEM,
+					actionBar.getSelectedNavigationIndex());
+		}
 	}
 	// 当导航项被选中时激发该方法
 	@Override
