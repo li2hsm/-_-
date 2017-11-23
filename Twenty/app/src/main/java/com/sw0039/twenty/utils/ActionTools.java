@@ -5,14 +5,18 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.content.res.Resources;
 import android.text.TextUtils;
+import android.util.DisplayMetrics;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.sql.Date;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
 /**
+ * 普通的功能函数
  * Created by Administrator on 2017/10/15.
  */
 public class ActionTools {
@@ -62,5 +66,44 @@ public class ActionTools {
 
         String TAG = activity.getLocalClassName();
         Log.w(TAG,msg);
+    }
+
+    /**
+     * 显示短时间的Toast
+     * @param context
+     * @param msg
+     */
+    public static void showToastShort(Context context,String msg){
+        if(null == context||TextUtils.isEmpty(msg)){
+            return;
+        }
+
+        Toast.makeText(context,msg,Toast.LENGTH_SHORT).show();
+    }
+
+    /**
+     * 获取屏幕的宽度
+     * @param cotext
+     * @return
+     */
+    public static int getScreenWidth(Context cotext){
+        Resources resources = cotext.getResources();
+        DisplayMetrics dm = resources.getDisplayMetrics();
+        float density = dm.density;
+        int width = dm.widthPixels;
+        return width;
+    }
+
+    /**
+     * 获取屏幕的高度
+     * @param cotext
+     * @return
+     */
+    public static int getScreenHeight(Context cotext){
+        Resources resources = cotext.getResources();
+        DisplayMetrics dm = resources.getDisplayMetrics();
+        float density = dm.density;
+        int height = dm.heightPixels;
+        return height;
     }
 }

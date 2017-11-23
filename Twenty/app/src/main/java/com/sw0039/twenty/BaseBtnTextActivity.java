@@ -3,7 +3,7 @@ package com.sw0039.twenty;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.TextUtils;
+import android.widget.Button;
 import android.widget.TextView;
 
 import org.greenrobot.eventbus.EventBus;
@@ -14,39 +14,25 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * 中间带一句话的activity
+ * 带一个文本框和一个按钮的activity
  */
-public class BaseCenterTextActivity extends AppCompatActivity {
+public class BaseBtnTextActivity extends AppCompatActivity {
 
-    /**
-     * 传递信息的key
-     */
-    public final static String MSG = "msg";
+    @BindView(R.id.content_text)
+    public TextView contentText;
+    @BindView(R.id.jum_btn)
+    public Button jumBtn;
 
-    @BindView(R.id.textView)
-    public TextView mText;
+    //当前操作的名称
+    private String actionName = null;
+
+    public final static String INTENT_PARAMS_ACTIONNAME = "actionName";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_base_center_text);
+        setContentView(R.layout.activity_base_btn_text);
         ButterKnife.bind(this);
-
-        //设置文字信息
-        setmText();
-    }
-
-    /**
-     * 设置文字信息
-     */
-    public void setmText() {
-        Intent intent = getIntent();
-        String msg = intent.getStringExtra(MSG);
-        if (!TextUtils.isEmpty(msg)) {
-            mText.setText(msg);
-        } else {
-            mText.setText("没有要显示的文字");
-        }
     }
 
     /*=================start===EventBus部分===============*/
@@ -57,7 +43,9 @@ public class BaseCenterTextActivity extends AppCompatActivity {
             return;
         }
 
-        mText.setText(event.getmShowMsg());
+        contentText.setText(event.getmShowMsg());
+        jumBtn.setText(event.getmBtnName());
+        jumBtn.setOnClickListener(event.getmOnClickListener());
     }
 
     //注册EventBus

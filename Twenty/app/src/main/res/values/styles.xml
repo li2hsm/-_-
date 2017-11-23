@@ -8,4 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--activity 以窗口的形式显示-->
+    <style name="activity_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--去边框-->
+        <item name="android:windowFullscreen">true</item><!--全屏显示-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <!--<item name="android:windowIsTranslucent">true</item> 为 Theme 设置透明属性,会让界面的启动，关闭动画失效-->
+        <item name="android:windowNoTitle">true</item><!--去标题-->
+        <item name="android:windowBackground">@android:color/transparent</item><!-- 为 Theme 设置背景图 设置dialog的背景-->
+    </style>
+
 </resources>

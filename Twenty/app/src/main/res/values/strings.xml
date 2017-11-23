@@ -16,20 +16,26 @@
     <string-array name="questions_list">
         <item>JsonErrorActivity   - 子类和父类有相同的id的变量声明,json解析报错</item>
         <item>JavaCirculateDoubleActivity   - 两个double类型数据的比较</item>
+        <item>ScrollviewListviewActivity   - scrollview嵌套listview显示不完整</item>
+        <item>RMBSymbolActivity   - 解决中文人民币符号在部分机型上的显示问题</item>
     </string-array>
     <string-array name="question_action_list">
         <item>questions.JsonErrorActivity</item>
         <item>questions.JavaCirculateDoubleActivity</item>
+        <item>questions.ScrollviewListviewActivity</item>
+        <item>questions.RMBSymbolActivity</item>
     </string-array>
 
     <!--四大组件-->
     <string-array name="fours_list">
         <item>HSScreanActivity   - 横竖屏切换，数据保存</item>
         <item>IntentActivity   - Intent与过滤器</item>
+        <item>LaunchModeActivity   - 四种启动模式</item>
     </string-array>
     <string-array name="fours_action_list">
         <item>fours_zujian.HSScreanActivity</item>
         <item>fours_zujian.IntentActivity</item>
+        <item>fours_zujian.LaunchModeActivity</item>
     </string-array>
 
     <!--第二章-->

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.sw0039.twenty">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
         android:allowBackup="true"
@@ -88,7 +91,101 @@
         <activity android:name=".BaseCenterTextActivity" />
         <activity android:name=".fours_zujian.IntentActivity" />
         <activity android:name=".questions.JavaCirculateDoubleActivity" />
-        <activity android:name=".fours_zujian.IntentChildActivity"></activity>
+        <activity android:name=".fours_zujian.IntentChildActivity" />
+        <activity android:name=".fours_zujian.LaunchModeActivity" />
+        <activity android:name=".BaseBtnTextActivity" />
+
+        <!-- 测试intent的测试规则 -->
+        <activity android:name=".fours_zujian.TestIntentChildActivity">
+
+            <!-- 操作的规则测试 -->
+            <!-- 1,要通过此过滤器，您在 Intent 中指定的操作必须与过滤器中列出的某一操作匹配。 -->
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <action android:name="@string/intent_test_action" />
+                <data android:mimeType="image/*"
+                    android:scheme="http"
+                    android:host="www.baidu.com"
+                    android:port="8080"
+                    android:path="/sdcard/hsm/"
+                    />
+            </intent-filter>
+            -->
+            <!--
+                2,3,如果该过滤器未列出任何操作，则 Intent 没有任何匹配项，因此所有 Intent 均无法通过测试。
+                但是，如果 Intent 未指定操作，则会通过测试（只要过滤器至少包含一个操作）。
+            -->
+            <!--
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*"
+                    android:scheme="http"
+                    android:host="www.baidu.com"
+                    android:port="8080"
+                    android:path="/sdcard/hsm/" />
+            </intent-filter>
+            -->
+
+
+            <!-- 类型的规则测试 -->
+            <!-- 1,若要使 Intent 通过类别测试，则 Intent 中的每个类别均必须与过滤器中的类别匹配。 -->
+            <!--
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="image/*"
+                    android:scheme="http"
+                    android:host="www.baidu.com"
+                    android:port="8080"
+                    android:path="/sdcard/hsm/" />
+            </intent-filter>
+            -->
+            <!-- 2,反之则未必然，Intent 过滤器声明的类别可以超出 Intent 中指定的数量，且 Intent 仍会通过测试。 -->
+            <!-- 3,因此，不含类别的 Intent 应当始终会通过此测试，无论过滤器中声明何种类别均是如此。 -->
+            <!--
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.APP_EMAIL" />
+                <data android:mimeType="image/*"
+                    android:scheme="http"
+                    android:host="www.baidu.com"
+                    android:port="8080"
+                    android:path="/sdcard/hsm/" />
+            </intent-filter>
+            -->
+
+
+            <!-- 数据的规则测试 -->
+            <!-- 1,若要使 Intent 通过类别测试，则 Intent 中的每个类别均必须与过滤器中的类别匹配。 -->
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            -->
+            <!--
+                2,对于包含 URI 但不含 MIME 类型（既未显式声明，也无法通过 URI 推断得出）的 Intent，仅当其 URI 与过滤器的 URI 格式匹配、
+                  且过滤器同样未指定 MIME 类型时，才会通过测试。
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.baidu.com"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".questions.ScrollviewListviewActivity"
+            android:theme="@style/activity_dialog"/>
+        <activity android:name=".questions.RMBSymbolActivity"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--RMBSymbolActivity 解决中文人民币符号在部分机型上的显示问题。-->
+    <string name="rmb_symbol">¥</string>
+    <string name="rmb_symbol_one">￥</string>
+    <string name="money_string">人民币￥5.00</string>
+
+</resources>
