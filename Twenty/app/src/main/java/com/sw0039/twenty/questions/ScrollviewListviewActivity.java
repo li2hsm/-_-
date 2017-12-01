@@ -22,16 +22,16 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * activity作为dialog弹出显示
+ * activity???dialog???????
  */
-//<!--activity 以窗口的形式显示-->
+//<!--activity ????????????-->
 //    <style name="activity_dialog" parent="@android:style/Theme.Dialog">
-//            <item name="android:windowFrame">@null</item><!--去边框-->
-//<item name="android:windowFullscreen">true</item><!--全屏显示-->
-//<item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
-//<!--<item name="android:windowIsTranslucent">true</item> 为 Theme 设置透明属性,会让界面的启动，关闭动画失效-->
-//<item name="android:windowNoTitle">true</item><!--去标题-->
-//<item name="android:windowBackground">@android:color/transparent</item><!-- 为 Theme 设置背景图 设置dialog的背景-->
+//            <item name="android:windowFrame">@null</item><!--????-->
+//<item name="android:windowFullscreen">true</item><!--??????-->
+//<item name="android:windowIsFloating">true</item><!--???????activity???-->
+//<!--<item name="android:windowIsTranslucent">true</item> ? Theme ???????????,?????????????????????效-->
+//<item name="android:windowNoTitle">true</item><!--?????-->
+//<item name="android:windowBackground">@android:color/transparent</item><!-- ? Theme ???????? ????dialog?????-->
 //</style>
 public class ScrollviewListviewActivity extends Activity {
 
@@ -67,8 +67,8 @@ public class ScrollviewListviewActivity extends Activity {
         List<String> arrays1 = new ArrayList<>();
         List<String> arrays2 = new ArrayList<>();
         for (int i = 0; i < arraylenght; i++) {
-            arrays1.add("第" + String.valueOf(i + 1) + "项");
-            arrays2.add("第" + String.valueOf(i + 1) + "项");
+            arrays1.add("??" + String.valueOf(i + 1) + "??");
+            arrays2.add("??" + String.valueOf(i + 1) + "??");
         }
 
         TextViewAdapter adapter1 = new TextViewAdapter(arrays1, this);
@@ -78,7 +78,7 @@ public class ScrollviewListviewActivity extends Activity {
         listview2.setAdapter(adapter2);
 
         TextView textView = new TextView(this);
-        textView.setText("不使用");
+        textView.setText("?????");
         textView.setTextSize(15);
         textView.setTextColor(getResources().getColor(R.color.colorPrimaryDark));
         textView.setGravity(Gravity.CENTER_VERTICAL);

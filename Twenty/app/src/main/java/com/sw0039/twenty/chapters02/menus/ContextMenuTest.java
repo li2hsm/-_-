@@ -1,4 +1,4 @@
-package com.sw0039.twenty.chapters02;
+package com.sw0039.twenty.chapters02.menus;
 
 import android.app.Activity;
 import android.graphics.Color;

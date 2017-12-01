@@ -1,8 +1,11 @@
 package com.sw0039.twenty.utils;
 
+import android.app.Activity;
 import android.content.Context;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
@@ -58,5 +61,21 @@ public class ViewTools {
         ViewGroup.LayoutParams params = listView.getLayoutParams();
         params.height = totalHeight + (listView.getDividerHeight() * (listAdapter.getCount() - 1));
         listView.setLayoutParams(params);
+    }
+
+    /**
+     * 设置activity dialog为全屏显示
+     * @param activity
+     */
+    public static void setDialogFullScreen(Activity activity){
+        if(null == activity){
+            return;
+        }
+
+        WindowManager.LayoutParams lp = activity.getWindow().getAttributes();
+        lp.width = ActionTools.getScreenWidth(activity);
+        lp.height = (int)(ActionTools.getScreenHeight(activity)*0.68);
+        lp.gravity = Gravity.BOTTOM;
+        activity.getWindow().setAttributes(lp);
     }
 }

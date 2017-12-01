@@ -4,10 +4,12 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:gravity="center_horizontal">
-	<Button
-		android:id="@+id/bn"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="启动指定Action、默认Category对应的Activity"
-		/>
+<EditText
+	android:id="@+id/show"
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content" 
+	android:text="第二个Activity"
+	android:editable="false"
+	android:cursorVisible="false"
+	/>
 </LinearLayout>

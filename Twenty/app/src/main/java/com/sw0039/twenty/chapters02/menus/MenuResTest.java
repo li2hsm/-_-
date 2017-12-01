@@ -1,4 +1,4 @@
-package com.sw0039.twenty.chapters02;
+package com.sw0039.twenty.chapters02.menus;
 
 import android.app.Activity;
 import android.graphics.Color;
@@ -13,7 +13,9 @@ import android.widget.Toast;
 
 import com.sw0039.twenty.R;
 
-
+/**
+ * 物理菜单键，控件上下文菜单
+ */
 public class MenuResTest extends Activity
 {
 	private TextView txt;

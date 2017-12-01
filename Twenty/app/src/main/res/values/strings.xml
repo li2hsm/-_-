@@ -17,12 +17,14 @@
         <item>JsonErrorActivity   - 子类和父类有相同的id的变量声明,json解析报错</item>
         <item>JavaCirculateDoubleActivity   - 两个double类型数据的比较</item>
         <item>ScrollviewListviewActivity   - scrollview嵌套listview显示不完整</item>
+        <item>ScrollviewListview1Activity   - scrollview嵌套listview显示不完整方法2</item>
         <item>RMBSymbolActivity   - 解决中文人民币符号在部分机型上的显示问题</item>
     </string-array>
     <string-array name="question_action_list">
         <item>questions.JsonErrorActivity</item>
         <item>questions.JavaCirculateDoubleActivity</item>
         <item>questions.ScrollviewListviewActivity</item>
+        <item>questions.ScrollviewListview1Activity</item>
         <item>questions.RMBSymbolActivity</item>
     </string-array>
 
@@ -31,15 +33,18 @@
         <item>HSScreanActivity   - 横竖屏切换，数据保存</item>
         <item>IntentActivity   - Intent与过滤器</item>
         <item>LaunchModeActivity   - 四种启动模式</item>
+        <item>Intent:MainActivity   - 启动一个自定义action的activity</item>
     </string-array>
     <string-array name="fours_action_list">
         <item>fours_zujian.HSScreanActivity</item>
         <item>fours_zujian.IntentActivity</item>
         <item>fours_zujian.LaunchModeActivity</item>
+        <item>fours_zujian.intents.ActionAttr.MainActivity</item>
     </string-array>
 
     <!--第二章-->
     <string-array name="chapter02_list">
+        <item>TestMenuActivity   - 测试菜单</item>
         <item>CodeViewActivity   - 代码创建activity界面</item>
         <item>CustomViewActivity - 自定义view根据手指滑动，变换位置</item>
         <item>ImageViewActivity  - Imageview的用法</item>
@@ -92,15 +97,11 @@
         <item>DialogTheme   - DialogTheme对话框的用法</item>
         <item>PopupWindowTest   - PopupWindow非阻塞对话框的用法</item>
         <item>ProgressDialogTest   - ProgressDialog对话框的用法</item>
-        <item>ActivityMenu   - ActivityMenu菜单的用法</item>
-        <item>ContextMenuTest   - ContextMenu上下文菜单的用法</item>
-        <item>MenuResTest   - MenuRes xml创建上下文菜单的用法</item>
-        <item>MenuTest   - Menu菜单的用法</item>
-        <item>PopupMenuTest   - PopupMenu菜单的用法</item>
         <item>ActionBar_DropDownNav   - ActionBar_DropDownNav Actionbar下拉选择列表的用法</item>
         <item>ActionBar_SwipeNav   - ActionBar_SwipeNav的用法</item>
     </string-array>
     <string-array name="chapter02_activitys_list">
+        <item>chapters02.TestMenuActivity</item>
         <item>chapters02.CodeViewActivity</item>
         <item>chapters02.CustomViewActivity</item>
         <item>chapters02.ImageViewActivity</item>
@@ -153,13 +154,24 @@
         <item>chapters02.DialogTheme</item>
         <item>chapters02.PopupWindowTest</item>
         <item>chapters02.ProgressDialogTest</item>
-        <item>chapters02.ActivityMenu</item>
-        <item>chapters02.ContextMenuTest</item>
-        <item>chapters02.MenuResTest</item>
-        <item>chapters02.MenuTest</item>
-        <item>chapters02.PopupMenuTest</item>
         <item>chapters02.ActionBar_DropDownNav</item>
         <item>chapters02.ActionBar_SwipeNav</item>
+    </string-array>
+
+    <!--第二章，菜单部分-->
+    <string-array name="chapter02_menu_detail_list">
+        <item>ActivityMenu   - 点击物理菜单键弹出的菜单,现在很多手机这个键已经没有那个功能了。</item>
+        <item>ContextMenuTest   - 控件上下文菜单</item>
+        <item>MenuResTest   - xml创建物理菜单键</item>
+        <item>MenuTest   - 物理菜单键，控件上下文菜单</item>
+        <item>PopupMenuTest   - pop菜单</item>
+    </string-array>
+    <string-array name="chapter02_menu_action_list">
+        <item>chapters02.menus.ActivityMenu</item>
+        <item>chapters02.menus.ContextMenuTest</item>
+        <item>chapters02.menus.MenuResTest</item>
+        <item>chapters02.menus.MenuTest</item>
+        <item>chapters02.menus.PopupMenuTest</item>
     </string-array>
 
     <string name="ok">OK</string>

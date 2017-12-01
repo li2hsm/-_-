@@ -1,8 +1,7 @@
-package com.sw0039.twenty.chapters02;
+package com.sw0039.twenty.chapters02.menus;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.PopupMenu;
@@ -44,6 +43,7 @@ public class PopupMenuTest extends Activity
 							Toast.makeText(PopupMenuTest.this,
 								"您单击了【" + item.getTitle() + "】菜单项"
 								, Toast.LENGTH_SHORT).show();
+							break;
 					}
 					return true;
 				}
