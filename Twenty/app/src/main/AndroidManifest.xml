@@ -14,7 +14,6 @@
         <activity android:name=".FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -53,10 +52,11 @@
         <activity android:name=".chapters02.SimpleListViewTest" />
         <activity android:name=".chapters02.SpinnerTest" />
         <activity android:name=".chapters02.StackViewTest" />
-        <activity android:name=".chapters02.ProgressBarTest" />
-        <activity android:name=".chapters02.RatingBarTest" />
-        <activity android:name=".chapters02.SeekBarTest" />
-        <activity android:name=".chapters02.TitleProgressBar" />
+        <activity android:name=".chapters02.actionbars.ProgressBarTest" />
+        <activity android:name=".chapters02.actionbars.RatingBarTest" />
+        <activity android:name=".chapters02.actionbars.SeekBarTest" />
+        <activity android:name=".chapters02.actionbars.TitleProgressBar" />
+        <activity android:name=".chapters02.actionbars.AnimationDrawableActivity" />
         <activity android:name=".chapters02.ImageSwitcherTest" />
         <activity android:name=".chapters02.TextSwitcherTest" />
         <activity android:name=".chapters02.ViewFlipperTest" />
@@ -82,6 +82,7 @@
         <activity android:name=".chapters02.menus.PopupMenuTest" />
         <activity android:name=".chapters02.ActionBar_DropDownNav" />
         <activity android:name=".chapters02.ActionBar_SwipeNav" />
+        <activity android:name=".chapters02.TestActionBarActivity" />
         <activity android:name=".fours_zujian.HSScreanActivity" />
         <activity android:name=".fours_zujian.FoursSubActivity" />
         <activity android:name=".questions.AllQuestionsActivity" />

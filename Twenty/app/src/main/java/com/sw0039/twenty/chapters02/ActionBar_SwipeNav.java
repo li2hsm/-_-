@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.widget.Toast;
 
 import com.sw0039.twenty.R;
 
@@ -23,6 +24,10 @@ public class ActionBar_SwipeNav extends FragmentActivity
 		setContentView(R.layout.test_actionbar_swipenav);
 		// 获取ActionBar对象
 		actionBar = getActionBar();
+		if(null == actionBar){
+			Toast.makeText(this,"getActionBar() null",Toast.LENGTH_SHORT).show();
+			return;
+		}
 		// 获取ViewPager
 		viewPager = (ViewPager) findViewById(R.id.pager);
 		// 创建一个FragmentPagerAdapter对象，该对象负责为ViewPager提供多个Fragment

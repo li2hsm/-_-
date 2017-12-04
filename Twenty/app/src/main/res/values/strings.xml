@@ -45,6 +45,7 @@
     <!--第二章-->
     <string-array name="chapter02_list">
         <item>TestMenuActivity   - 测试菜单</item>
+        <item>TestActionBarActivity   - 测试Top活动条</item>
         <item>CodeViewActivity   - 代码创建activity界面</item>
         <item>CustomViewActivity - 自定义view根据手指滑动，变换位置</item>
         <item>ImageViewActivity  - Imageview的用法</item>
@@ -76,10 +77,6 @@
         <item>SimpleListViewTest   - SimpleListView直接用android:entries给字符串数组的用法</item>
         <item>SpinnerTest   - Spinner下拉列表的用法</item>
         <item>StackViewTest   - StackView层叠列表，可滑动删除添加的用法</item>
-        <item>ProgressBarTest   - ProgressBar进度条的用法</item>
-        <item>RatingBarTest   - RatingBar五星评分的用法</item>
-        <item>SeekBarTest   - SeekBar拖动改变属性值的用法</item>
-        <item>TitleProgressBar   - TitleProgressBar的用法（有问题显示不出来）</item>
         <item>ImageSwitcherTest   - ImageSwitcher带切换动画的imageview的用法</item>
         <item>TextSwitcherTest   - TextSwitcher带切换动画的textview的用法</item>
         <item>ViewFlipperTest   - ViewFlipper带切换动画的ViewFlipper的用法</item>
@@ -102,6 +99,7 @@
     </string-array>
     <string-array name="chapter02_activitys_list">
         <item>chapters02.TestMenuActivity</item>
+        <item>chapters02.TestActionBarActivity</item>
         <item>chapters02.CodeViewActivity</item>
         <item>chapters02.CustomViewActivity</item>
         <item>chapters02.ImageViewActivity</item>
@@ -133,10 +131,6 @@
         <item>chapters02.SimpleListViewTest</item>
         <item>chapters02.SpinnerTest</item>
         <item>chapters02.StackViewTest</item>
-        <item>chapters02.ProgressBarTest</item>
-        <item>chapters02.RatingBarTest</item>
-        <item>chapters02.SeekBarTest</item>
-        <item>chapters02.TitleProgressBar</item>
         <item>chapters02.ImageSwitcherTest</item>
         <item>chapters02.TextSwitcherTest</item>
         <item>chapters02.ViewFlipperTest</item>
@@ -172,6 +166,22 @@
         <item>chapters02.menus.MenuResTest</item>
         <item>chapters02.menus.MenuTest</item>
         <item>chapters02.menus.PopupMenuTest</item>
+    </string-array>
+
+    <!--第二章，Top活动条部分-->
+    <string-array name="chapter02_actionbar_detail_list">
+        <item>AnimationDrawableActivity   - AnimationDrawableActivity可以停止的进度条的用法</item>
+        <item>ProgressBarTest   - ProgressBar进度条的用法</item>
+        <item>RatingBarTest   - RatingBar五星评分的用法</item>
+        <item>SeekBarTest   - SeekBar拖动改变属性值的用法</item>
+        <item>TitleProgressBar   - TitleProgressBar的用法（有问题显示不出来）</item>
+    </string-array>
+    <string-array name="chapter02_actionbar_action_list">
+        <item>chapters02.actionbars.AnimationDrawableActivity</item>
+        <item>chapters02.actionbars.ProgressBarTest</item>
+        <item>chapters02.actionbars.RatingBarTest</item>
+        <item>chapters02.actionbars.SeekBarTest</item>
+        <item>chapters02.actionbars.TitleProgressBar</item>
     </string-array>
 
     <string name="ok">OK</string>
