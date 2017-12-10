@@ -40,6 +40,8 @@ public class ActionTools {
         // Start an activity if it's safe
         if (isIntentSafe) {
             context.startActivity(intent);
+        } else {
+            Toast.makeText(context, classname + "没有注册", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -56,37 +58,40 @@ public class ActionTools {
 
     /**
      * 显示log
+     *
      * @param activity
      * @param msg
      */
-    public static void showLog(Activity activity,String msg){
-        if(null==activity|| TextUtils.isEmpty(msg)){
+    public static void showLog(Activity activity, String msg) {
+        if (null == activity || TextUtils.isEmpty(msg)) {
             return;
         }
 
         String TAG = activity.getLocalClassName();
-        Log.w(TAG,msg);
+        Log.w(TAG, msg);
     }
 
     /**
      * 显示短时间的Toast
+     *
      * @param context
      * @param msg
      */
-    public static void showToastShort(Context context,String msg){
-        if(null == context||TextUtils.isEmpty(msg)){
+    public static void showToastShort(Context context, String msg) {
+        if (null == context || TextUtils.isEmpty(msg)) {
             return;
         }
 
-        Toast.makeText(context,msg,Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, msg, Toast.LENGTH_SHORT).show();
     }
 
     /**
      * 获取屏幕的宽度
+     *
      * @param cotext
      * @return
      */
-    public static int getScreenWidth(Context cotext){
+    public static int getScreenWidth(Context cotext) {
         Resources resources = cotext.getResources();
         DisplayMetrics dm = resources.getDisplayMetrics();
         float density = dm.density;
@@ -96,10 +101,11 @@ public class ActionTools {
 
     /**
      * 获取屏幕的高度
+     *
      * @param cotext
      * @return
      */
-    public static int getScreenHeight(Context cotext){
+    public static int getScreenHeight(Context cotext) {
         Resources resources = cotext.getResources();
         DisplayMetrics dm = resources.getDisplayMetrics();
         float density = dm.density;

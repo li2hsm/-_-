@@ -46,6 +46,7 @@
     <string-array name="chapter02_list">
         <item>TestMenuActivity   - 测试菜单</item>
         <item>TestActionBarActivity   - 测试Top活动条</item>
+        <item>TestEventsActivity   - 测试事件</item>
         <item>CodeViewActivity   - 代码创建activity界面</item>
         <item>CustomViewActivity - 自定义view根据手指滑动，变换位置</item>
         <item>ImageViewActivity  - Imageview的用法</item>
@@ -100,6 +101,7 @@
     <string-array name="chapter02_activitys_list">
         <item>chapters02.TestMenuActivity</item>
         <item>chapters02.TestActionBarActivity</item>
+        <item>chapters02.TestEventsActivity</item>
         <item>chapters02.CodeViewActivity</item>
         <item>chapters02.CustomViewActivity</item>
         <item>chapters02.ImageViewActivity</item>
@@ -182,6 +184,16 @@
         <item>chapters02.actionbars.RatingBarTest</item>
         <item>chapters02.actionbars.SeekBarTest</item>
         <item>chapters02.actionbars.TitleProgressBar</item>
+    </string-array>
+
+    <!--第二章，事件-->
+    <string-array name="chapter02_events_detail_list">
+        <item>MainActivity   - onkeylistener控制飞机移动</item>
+        <item>SendSmsActivity   - 发送短信</item>
+    </string-array>
+    <string-array name="chapter02_events_action_list">
+        <item>chapters02.events.MainActivity</item>
+        <item>chapters02.events.SendSmsActivity</item>
     </string-array>
 
     <string name="ok">OK</string>

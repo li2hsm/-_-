@@ -14,12 +14,14 @@
         <activity android:name=".FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
         <!-- 第二章的部分 -->
         <activity android:name=".chapters02.TestMenuActivity" />
+        <activity android:name=".chapters02.TestEventsActivity" />
         <activity android:name=".chapters02.Chapter02Activity" />
         <activity android:name=".chapters02.CodeViewActivity" />
         <activity android:name=".chapters02.CustomViewActivity" />
@@ -57,6 +59,8 @@
         <activity android:name=".chapters02.actionbars.SeekBarTest" />
         <activity android:name=".chapters02.actionbars.TitleProgressBar" />
         <activity android:name=".chapters02.actionbars.AnimationDrawableActivity" />
+        <activity android:name=".chapters02.events.MainActivity" />
+        <activity android:name=".chapters02.events.SendSmsActivity" />
         <activity android:name=".chapters02.ImageSwitcherTest" />
         <activity android:name=".chapters02.TextSwitcherTest" />
         <activity android:name=".chapters02.ViewFlipperTest" />
@@ -95,18 +99,19 @@
         <activity android:name=".questions.JavaCirculateDoubleActivity" />
         <activity android:name=".fours_zujian.IntentChildActivity" />
         <activity android:name=".fours_zujian.LaunchModeActivity" />
-        <!--intent的使用实例-->
+        <!-- intent的使用实例 -->
         <activity android:name=".fours_zujian.intents.ActionAttr.MainActivity" />
-        <activity android:name=".fours_zujian.intents.ActionAttr.SecondActivity" >
+        <activity android:name=".fours_zujian.intents.ActionAttr.SecondActivity">
             <intent-filter>
+
                 <!-- 指定该Activity能响应Action为指定字符串的Intent -->
                 <action android:name="org.crazyit.intent.action.CRAZYIT_ACTION" />
                 <!-- 指定该Activity能响应Action属性为helloWorld的Intent -->
                 <action android:name="helloWorld" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".BaseBtnTextActivity" />
 
         <!-- 测试intent的测试规则 -->
@@ -197,12 +202,14 @@
                     android:scheme="http" />
             </intent-filter>
         </activity>
-        <activity android:name=".questions.ScrollviewListviewActivity"
-            android:theme="@style/activity_dialog"/>
-        <activity android:name=".questions.ScrollviewListview1Activity"
-            android:theme="@style/activity_dialog"/>
-        <activity android:name=".questions.RMBSymbolActivity"></activity>
-
+        <activity
+            android:name=".questions.ScrollviewListviewActivity"
+            android:theme="@style/activity_dialog" />
+        <activity
+            android:name=".questions.ScrollviewListview1Activity"
+            android:theme="@style/activity_dialog" />
+        <activity android:name=".questions.RMBSymbolActivity" />
+        <activity android:name=".chapters02.fragments.TestFragmentActivity"></activity>
     </application>
 
 </manifest>
