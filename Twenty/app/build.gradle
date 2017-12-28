@@ -7,7 +7,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion '26.0.2'
+    buildToolsVersion '27.0.1'
     defaultConfig {
         applicationId "com.sw0039.twenty"
         minSdkVersion 14
@@ -50,4 +50,5 @@ dependencies {
     compile 'org.greenrobot:eventbus:3.1.1'
     //ConstraintLayout可拖拽布局
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation files('libs/volley.jar')
 }

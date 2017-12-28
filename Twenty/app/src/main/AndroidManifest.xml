@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.sw0039.twenty">
+    package="com.sw0039.justdoit">
 
     <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -22,6 +23,7 @@
         <!-- 第二章的部分 -->
         <activity android:name=".chapters02.TestMenuActivity" />
         <activity android:name=".chapters02.TestEventsActivity" />
+        <activity android:name=".chapters02.fragments.TestFragmentActivity" />
         <activity android:name=".chapters02.Chapter02Activity" />
         <activity android:name=".chapters02.CodeViewActivity" />
         <activity android:name=".chapters02.CustomViewActivity" />
@@ -149,7 +151,6 @@
             </intent-filter>
             -->
 
-
             <!-- 类型的规则测试 -->
             <!-- 1,若要使 Intent 通过类别测试，则 Intent 中的每个类别均必须与过滤器中的类别匹配。 -->
             <!--
@@ -209,7 +210,12 @@
             android:name=".questions.ScrollviewListview1Activity"
             android:theme="@style/activity_dialog" />
         <activity android:name=".questions.RMBSymbolActivity" />
-        <activity android:name=".chapters02.fragments.TestFragmentActivity"></activity>
-    </application>
 
+        <activity android:name=".chapters02.fragments.savedata.ConfigChangesTestActivity"
+            android:configChanges="screenSize|orientation"/>
+        <activity android:name=".chapters02.fragments.savedata.FixProblemsActivity" />
+        <activity android:name=".chapters02.fragments.savedata.FragmentRetainDataActivity" />
+        <activity android:name=".chapters02.fragments.savedata.HomeActivity" />
+        <activity android:name=".chapters02.fragments.savedata.SavedInstanceStateUsingActivity" />
+    </application>
 </manifest>

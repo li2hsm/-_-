@@ -42,7 +42,7 @@
                 android:textSize="17sp"
                 android:textColor="@color/white"
                 />
-            <com.sw0039.twenty.questions.ScrollListview
+            <com.sw0039.justdoit.questions.ScrollListview
                 android:id="@+id/listview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

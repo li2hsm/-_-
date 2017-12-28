@@ -19,7 +19,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:3.1.0-alpha06'
         //使用ButterKnife时，总是出现空指针
 //        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
 

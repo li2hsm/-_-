@@ -47,6 +47,7 @@
         <item>TestMenuActivity   - 测试菜单</item>
         <item>TestActionBarActivity   - 测试Top活动条</item>
         <item>TestEventsActivity   - 测试事件</item>
+        <item>TestFragmentActivity   - 测试fragment</item>
         <item>CodeViewActivity   - 代码创建activity界面</item>
         <item>CustomViewActivity - 自定义view根据手指滑动，变换位置</item>
         <item>ImageViewActivity  - Imageview的用法</item>
@@ -102,6 +103,7 @@
         <item>chapters02.TestMenuActivity</item>
         <item>chapters02.TestActionBarActivity</item>
         <item>chapters02.TestEventsActivity</item>
+        <item>chapters02.fragments.TestFragmentActivity</item>
         <item>chapters02.CodeViewActivity</item>
         <item>chapters02.CustomViewActivity</item>
         <item>chapters02.ImageViewActivity</item>

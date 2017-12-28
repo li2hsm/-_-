@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.sw0039.twenty.SearchViewActivity">
+    tools:context="com.sw0039.justdoit.SearchViewActivity">
 
     <SearchView
         android:id="@+id/search_view"
