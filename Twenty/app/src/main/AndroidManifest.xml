@@ -4,7 +4,7 @@
     package="com.sw0039.justdoit">
 
     <uses-permission android:name="android.permission.SEND_SMS" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -151,6 +151,7 @@
             </intent-filter>
             -->
 
+
             <!-- 类型的规则测试 -->
             <!-- 1,若要使 Intent 通过类别测试，则 Intent 中的每个类别均必须与过滤器中的类别匹配。 -->
             <!--
@@ -210,12 +211,20 @@
             android:name=".questions.ScrollviewListview1Activity"
             android:theme="@style/activity_dialog" />
         <activity android:name=".questions.RMBSymbolActivity" />
-
-        <activity android:name=".chapters02.fragments.savedata.ConfigChangesTestActivity"
-            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:name=".chapters02.fragments.savedata.ConfigChangesTestActivity"
+            android:configChanges="screenSize|orientation" />
         <activity android:name=".chapters02.fragments.savedata.FixProblemsActivity" />
         <activity android:name=".chapters02.fragments.savedata.FragmentRetainDataActivity" />
         <activity android:name=".chapters02.fragments.savedata.HomeActivity" />
         <activity android:name=".chapters02.fragments.savedata.SavedInstanceStateUsingActivity" />
+        <activity android:name=".shape_drawables.ShareDrawableActivity" />
+        <activity android:name=".shape_drawables.ShapeDrawableTest" />
+        <activity android:name=".shape_drawables.ClipDrawableTest" />
+        <activity android:name=".shape_drawables.AnimationDrawable" />
+        <activity android:name=".shape_drawables.AttributeAnimDrawable" />
+        <activity android:name=".shape_drawables.XmlResTest" />
+        <activity android:name=".shape_drawables.AttrResTest"></activity>
     </application>
+
 </manifest>

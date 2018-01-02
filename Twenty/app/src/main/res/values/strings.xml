@@ -5,11 +5,13 @@
         <item>第二章,Android应用的界面编程</item>
         <item>四大组件</item>
         <item>所有问题汇总</item>
+        <item>第六章,Android资源应用</item>
     </string-array>
     <string-array name="first_activitys_list">
         <item>chapters02.Chapter02Activity</item>
         <item>fours_zujian.FoursSubActivity</item>
         <item>questions.AllQuestionsActivity</item>
+        <item>shape_drawables.ShareDrawableActivity</item>
     </string-array>
 
     <!--所有的问题再现，与解决-->
@@ -26,6 +28,24 @@
         <item>questions.ScrollviewListviewActivity</item>
         <item>questions.ScrollviewListview1Activity</item>
         <item>questions.RMBSymbolActivity</item>
+    </string-array>
+
+    <!--第六章,Android资源应用-->
+    <string-array name="chapters06_list">
+        <item>ShapeDrawableTest   - xml定义几何图形</item>
+        <item>ClipDrawableTest   - 截取图片的一部分</item>
+        <item>AnimationDrawable   - 图片自带加载动画</item>
+        <item>AttributeAnimDrawable   - 图片自带加载属性动画</item>
+        <item>XmlResTest   - 使用原始的xml</item>
+        <item>AttrResTest   - 使用自定义属性</item>
+    </string-array>
+    <string-array name="chapters06_action_list">
+        <item>shape_drawables.ShapeDrawableTest</item>
+        <item>shape_drawables.ClipDrawableTest</item>
+        <item>shape_drawables.AnimationDrawable</item>
+        <item>shape_drawables.AttributeAnimDrawable</item>
+        <item>shape_drawables.XmlResTest</item>
+        <item>shape_drawables.AttrResTest</item>
     </string-array>
 
     <!--四大组件-->
