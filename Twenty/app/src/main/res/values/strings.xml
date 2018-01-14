@@ -6,12 +6,14 @@
         <item>四大组件</item>
         <item>所有问题汇总</item>
         <item>第六章,Android资源应用</item>
+        <item>第七章,图形与图像处理</item>
     </string-array>
     <string-array name="first_activitys_list">
         <item>chapters02.Chapter02Activity</item>
         <item>fours_zujian.FoursSubActivity</item>
         <item>questions.AllQuestionsActivity</item>
         <item>shape_drawables.ShareDrawableActivity</item>
+        <item>deal_bitmaps.DealBitmapActivity</item>
     </string-array>
 
     <!--所有的问题再现，与解决-->
@@ -28,6 +30,40 @@
         <item>questions.ScrollviewListviewActivity</item>
         <item>questions.ScrollviewListview1Activity</item>
         <item>questions.RMBSymbolActivity</item>
+    </string-array>
+
+    <!--第七章,图形与图像处理-->
+    <string-array name="chapters07_list">
+        <item>BitmapTest   - 测试创建bitmap</item>
+        <item>CanvasTest   - Canvas使用</item>
+        <item>PathTest   - Canvas Path使用</item>
+        <item>HandDraw   - 手绘</item>
+        <item>PathSaveRestoreTest   - path save restore的使用</item>
+        <item>PathText   - 根据path路径画文字</item>
+        <item>PinBall   - 乒乓球</item>
+        <item>ShaderTest   - paint setShader的效果</item>
+        <item>FatPo   - 逐帧动画</item>
+        <item>TweenAnim   - 补间动画</item>
+        <item>Butterfly   - 逐帧动画和补间动画一起运行</item>
+        <item>ListViewTween   - listview的补间动画</item>
+        <item>SurfaceViewTest   - SurfaceView的应用</item>
+        <item>ShowWave   - SurfaceView实现的示波器，正玄曲线，余玄曲线</item>
+    </string-array>
+    <string-array name="chapters07_action_list">
+        <item>deal_bitmaps.BitmapTest</item>
+        <item>deal_bitmaps.CanvasTest</item>
+        <item>deal_bitmaps.PathTest</item>
+        <item>deal_bitmaps.HandDraw</item>
+        <item>deal_bitmaps.PathSaveRestoreTest</item>
+        <item>deal_bitmaps.PathText</item>
+        <item>deal_bitmaps.PinBall</item>
+        <item>deal_bitmaps.ShaderTest</item>
+        <item>deal_bitmaps.FatPo</item>
+        <item>deal_bitmaps.TweenAnim</item>
+        <item>deal_bitmaps.Butterfly</item>
+        <item>deal_bitmaps.ListViewTween</item>
+        <item>deal_bitmaps.SurfaceViewTest</item>
+        <item>deal_bitmaps.ShowWave</item>
     </string-array>
 
     <!--第六章,Android资源应用-->
@@ -239,5 +275,16 @@
     <string name="font_14">14号字体</string>
     <string name="font_16">16号字体</string>
     <string name="font_18">18号字体</string>
+
+    <string name="width_1">1像素</string>
+    <string name="width_3">3像素</string>
+    <string name="width_5">5像素</string>
+    <string name="color_red">红色</string>
+    <string name="color_green">绿色</string>
+    <string name="color_blue">蓝色</string>
+    <string name="color">画笔颜色</string>
+    <string name="width">画笔宽度</string>
+    <string name="blur">模糊效果</string>
+    <string name="emboss">浮雕效果</string>
 
 </resources>

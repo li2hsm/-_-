@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="circle">圆形</string>
+    <string name="square">正方形</string>
+    <string name="rect">长方形</string>
+    <string name="round_rect">圆角矩形</string>
+    <string name="oval">椭圆形</string>
+    <string name="triangle">三角形</string>
+    <string name="pentagon">五角形</string>
+
+    <string name="bitmap">位图</string>
+    <string name="line">线性渐变</string>
+    <string name="radial">圆形渐变</string>
+    <string name="sweep">角度渐变</string>
+    <string name="composite">混合</string>
+
+    <string name="play">播放</string>
+    <string name="stop">停止</string>
+
+    <string name="sin">正弦曲线</string>
+    <string name="cos">余弦曲线</string>
+
+</resources>

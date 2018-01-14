@@ -224,7 +224,22 @@
         <activity android:name=".shape_drawables.AnimationDrawable" />
         <activity android:name=".shape_drawables.AttributeAnimDrawable" />
         <activity android:name=".shape_drawables.XmlResTest" />
-        <activity android:name=".shape_drawables.AttrResTest"></activity>
+        <activity android:name=".shape_drawables.AttrResTest" />
+        <activity android:name=".deal_bitmaps.BitmapTest" />
+        <activity android:name=".deal_bitmaps.DealBitmapActivity" />
+        <activity android:name=".deal_bitmaps.CanvasTest" />
+        <activity android:name=".deal_bitmaps.PathTest" />
+        <activity android:name=".deal_bitmaps.HandDraw" />
+        <activity android:name=".deal_bitmaps.PathSaveRestoreTest" />
+        <activity android:name=".deal_bitmaps.PathText" />
+        <activity android:name=".deal_bitmaps.PinBall" />
+        <activity android:name=".deal_bitmaps.ShaderTest" />
+        <activity android:name=".deal_bitmaps.FatPo" />
+        <activity android:name=".deal_bitmaps.TweenAnim" />
+        <activity android:name=".deal_bitmaps.Butterfly" />
+        <activity android:name=".deal_bitmaps.ListViewTween" />
+        <activity android:name=".deal_bitmaps.SurfaceViewTest" />
+        <activity android:name=".deal_bitmaps.ShowWave"></activity>
     </application>
 
 </manifest>
