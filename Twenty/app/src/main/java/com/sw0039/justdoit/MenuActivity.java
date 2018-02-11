@@ -15,20 +15,20 @@ import android.widget.TextView;
 public class MenuActivity extends AppCompatActivity {
 
     //-----------"字体大小"菜单的标识----------
-    private final int font_11 = 0x111;
-    private final int font_12 = 0x112;
-    private final int font_13 = 0x113;
-    private final int font_14 = 0x114;
-    private final int font_15 = 0x115;
-    private final int font_16 = 0x116;
+    private static final int font_11 = 0x111;
+    private static final int font_12 = 0x112;
+    private static final int font_13 = 0x113;
+    private static final int font_14 = 0x114;
+    private static final int font_15 = 0x115;
+    private static final int font_16 = 0x116;
 
     //-----------普通菜单的标识---------
-    private final int PLAN_FORM = 0X120;
+    private static final int PLAN_FORM = 0X120;
 
     //-----------"字体颜色"菜单的标识----------
-    private final int font_red = 0x121;
-    private final int font_green = 0x122;
-    private final int font_blue = 0x123;
+    private static final int font_red = 0x121;
+    private static final int font_green = 0x122;
+    private static final int font_blue = 0x123;
 
     private Context mContext;
     private TextView mTextView;

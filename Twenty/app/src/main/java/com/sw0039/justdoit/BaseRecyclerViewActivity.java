@@ -54,6 +54,31 @@ public class BaseRecyclerViewActivity extends AppCompatActivity {
         initViews();
     }
 
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
     /**
      * 添加数据
      * @param arrays

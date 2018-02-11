@@ -7,6 +7,7 @@
         <item>所有问题汇总</item>
         <item>第六章,Android资源应用</item>
         <item>第七章,图形与图像处理</item>
+        <item>动画</item>
     </string-array>
     <string-array name="first_activitys_list">
         <item>chapters02.Chapter02Activity</item>
@@ -14,6 +15,7 @@
         <item>questions.AllQuestionsActivity</item>
         <item>shape_drawables.ShareDrawableActivity</item>
         <item>deal_bitmaps.DealBitmapActivity</item>
+        <item>anims.TestAnimationActivity</item>
     </string-array>
 
     <!--所有的问题再现，与解决-->
@@ -64,6 +66,24 @@
         <item>deal_bitmaps.ListViewTween</item>
         <item>deal_bitmaps.SurfaceViewTest</item>
         <item>deal_bitmaps.ShowWave</item>
+    </string-array>
+
+    <!--动画-->
+    <string-array name="animation_list">
+        <item>FrameAnimation   - 逐帧动画</item>
+        <item>TweenAnimation   - 补间动画</item>
+        <item>ObjectAnimationActivity   - 属性动画1，自动设置变化值(需要实现属性对象get()和set()方法)</item>
+        <item>ValueAnimationActivity   - 属性动画2</item>
+        <item>CodeObjectAnimActivity   - 属性动画,java代码实现属性动画</item>
+        <item>XMLAnimatorActivity   - 属性动画,xml实现属性动画</item>
+    </string-array>
+    <string-array name="animation_action_list">
+        <item>anims.FrameAnimation</item>
+        <item>anims.TweenAnimation</item>
+        <item>anims.ObjectAnimationActivity</item>
+        <item>anims.ValueAnimationActivity</item>
+        <item>anims.CodeObjectAnimActivity</item>
+        <item>anims.XMLAnimatorActivity</item>
     </string-array>
 
     <!--第六章,Android资源应用-->
