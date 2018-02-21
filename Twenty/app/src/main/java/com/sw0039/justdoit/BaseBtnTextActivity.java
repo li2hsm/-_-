@@ -38,7 +38,7 @@ public class BaseBtnTextActivity extends AppCompatActivity {
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onMessageEvent(MessageEvent event) {
         /* Do something */
-        if(null == event){
+        if (null == event) {
             return;
         }
 
