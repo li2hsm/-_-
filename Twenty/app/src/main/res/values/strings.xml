@@ -8,6 +8,7 @@
         <item>第六章,Android资源应用</item>
         <item>第七章,图形与图像处理</item>
         <item>动画</item>
+        <item>第八章,Android存储</item>
     </string-array>
     <string-array name="first_activitys_list">
         <item>chapters02.Chapter02Activity</item>
@@ -16,6 +17,7 @@
         <item>shape_drawables.ShareDrawableActivity</item>
         <item>deal_bitmaps.DealBitmapActivity</item>
         <item>anims.TestAnimationActivity</item>
+        <item>io.TestIOActivity</item>
     </string-array>
 
     <!--所有的问题再现，与解决-->
@@ -84,6 +86,14 @@
         <item>anims.ValueAnimationActivity</item>
         <item>anims.CodeObjectAnimActivity</item>
         <item>anims.XMLAnimatorActivity</item>
+    </string-array>
+
+    <!--android存储-->
+    <string-array name="storage_list">
+        <item>TestFileActivity   - 测试文件操作</item>
+    </string-array>
+    <string-array name="storage_action_list">
+        <item>io.TestFileActivity</item>
     </string-array>
 
     <!--第六章,Android资源应用-->
