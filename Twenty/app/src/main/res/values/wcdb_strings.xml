@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">设置</string>
+    <string name="init_plain_text_db">初始化 Plain-text DB</string>
+    <string name="init_encrypted_db">初始化 Encrypted DB</string>
+    <string name="insert_message">插入 Message</string>
+
+</resources>

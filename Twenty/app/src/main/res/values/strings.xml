@@ -91,9 +91,11 @@
     <!--android存储-->
     <string-array name="storage_list">
         <item>TestFileActivity   - 测试文件操作</item>
+        <item>TestDBActivity   - 测试加密数据库的操作</item>
     </string-array>
     <string-array name="storage_action_list">
         <item>io.TestFileActivity</item>
+        <item>io.TestDBActivity</item>
     </string-array>
 
     <!--第六章,Android资源应用-->
