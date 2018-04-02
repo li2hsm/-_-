@@ -9,6 +9,7 @@
         <item>第七章,图形与图像处理</item>
         <item>动画</item>
         <item>第八章,Android存储</item>
+        <item>第九章,设备，多媒体开发</item>
     </string-array>
     <string-array name="first_activitys_list">
         <item>chapters02.Chapter02Activity</item>
@@ -18,6 +19,7 @@
         <item>deal_bitmaps.DealBitmapActivity</item>
         <item>anims.TestAnimationActivity</item>
         <item>io.TestIOActivity</item>
+        <item>devices.TestIOActivity</item>
     </string-array>
 
     <!--所有的问题再现，与解决-->
@@ -92,10 +94,12 @@
     <string-array name="storage_list">
         <item>TestFileActivity   - 测试文件操作</item>
         <item>TestDBActivity   - 测试加密数据库的操作</item>
+        <item>TestTTSActivity   - 测试TTS自动朗读</item>
     </string-array>
     <string-array name="storage_action_list">
         <item>io.TestFileActivity</item>
         <item>io.TestDBActivity</item>
+        <item>io.TestTTSActivity</item>
     </string-array>
 
     <!--第六章,Android资源应用-->
@@ -284,6 +288,14 @@
     <string-array name="chapter02_events_action_list">
         <item>chapters02.events.MainActivity</item>
         <item>chapters02.events.SendSmsActivity</item>
+    </string-array>
+
+    <!--设备多媒体-->
+    <string-array name="devices_list">
+        <item>CameraActivity   - 测试camera2的使用</item>
+    </string-array>
+    <string-array name="devices_action_list">
+        <item>devices.CameraActivity</item>
     </string-array>
 
     <string name="ok">OK</string>
