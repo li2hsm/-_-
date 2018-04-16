@@ -70,7 +70,6 @@ public class CameraTextureView extends TextureView {
     private Activity mActivity;
     private TackPhotoCallback mTackPhotoCallback;
 
-
     public CameraTextureView(Context context) {
         this(context, null);
     }
@@ -962,8 +961,5 @@ public class CameraTextureView extends TextureView {
             return Long.signum((long) lhs.getWidth() * lhs.getHeight() -
                     (long) rhs.getWidth() * rhs.getHeight());
         }
-
     }
-
-
 }
