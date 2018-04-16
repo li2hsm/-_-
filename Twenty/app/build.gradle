@@ -11,12 +11,14 @@ android {
     buildToolsVersion '27.0.3'
     defaultConfig {
         //context.getPackegeName()获取的包名
-        applicationId "com.hsm.justdoit"
+        applicationId "com.sw0039.justdoit"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled = true
 
         //使用butterknife需要添加的部分（必须加）
         javaCompileOptions {
@@ -42,7 +44,7 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
 
     implementation 'com.android.support:appcompat-v7:27.0.2'
 
@@ -50,36 +52,36 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
 
     //recyclerview
-    compile 'com.android.support:recyclerview-v7:27.0.2'
+    implementation 'com.android.support:recyclerview-v7:27.0.2'
 
     //butterknife
-    compile 'com.jakewharton:butterknife:8.8.1'
-    compile 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.jakewharton:butterknife-compiler:8.8.1'
 
     //Gson
-    compile 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.google.code.gson:gson:2.8.2'
 
     //EventBus
-    compile 'org.greenrobot:eventbus:3.1.1'
+    implementation 'org.greenrobot:eventbus:3.1.1'
 
     implementation files('libs/volley.jar')
     //内存泄露分析
-    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
-    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
     implementation 'com.android.support.constraint:constraint-layout:1.1.0-beta5'
 
     //多功能dialog
-    compile 'com.mylhyl:circleDialog:2.4.2'
+    implementation 'com.mylhyl:circleDialog:2.4.2'
 
     //多功能toast
-    compile 'com.github.GrenderG:Toasty:1.2.8'
+    implementation 'com.github.GrenderG:Toasty:1.2.8'
 
     //加密数据库
     implementation 'com.tencent.wcdb:wcdb-android:1.0.5'
 
     //camera2使用到的包
-    compile "com.android.support:support-v13:27.0.2"
-    compile "com.android.support:cardview-v7:27.0.2"
+    implementation "com.android.support:support-v13:27.0.2"
+    implementation "com.android.support:cardview-v7:27.0.2"
 
     //单元测试
     testImplementation 'junit:junit:4.12'

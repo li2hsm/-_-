@@ -19,7 +19,7 @@
         <item>deal_bitmaps.DealBitmapActivity</item>
         <item>anims.TestAnimationActivity</item>
         <item>io.TestIOActivity</item>
-        <item>devices.TestIOActivity</item>
+        <item>devices.TestDevicesActivity</item>
     </string-array>
 
     <!--所有的问题再现，与解决-->

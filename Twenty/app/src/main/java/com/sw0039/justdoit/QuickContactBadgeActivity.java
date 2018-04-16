@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.QuickContactBadge;
 
+import com.sw0039.justdoit.R;
+
 /**
  * 测试QuickContactBadge使用
  */

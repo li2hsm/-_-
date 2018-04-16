@@ -16,8 +16,8 @@ public class TestDevicesActivity extends BaseRecyclerViewActivity {
 
         setTitle("测试设备，多媒体");
         //添加数据
-        String[] arrays = getResources().getStringArray(R.array.storage_list);
-        String[] activitys = getResources().getStringArray(R.array.storage_action_list);
+        String[] arrays = getResources().getStringArray(R.array.devices_list);
+        String[] activitys = getResources().getStringArray(R.array.devices_action_list);
         addDatas(arrays,activitys);
     }
 }

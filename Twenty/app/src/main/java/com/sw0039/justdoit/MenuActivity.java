@@ -9,6 +9,8 @@ import android.view.MenuItem;
 import android.view.SubMenu;
 import android.widget.TextView;
 
+import com.sw0039.justdoit.R;
+
 /**
  * 测试菜单的使用
  */

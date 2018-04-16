@@ -436,7 +436,6 @@ public class CameraTextureView extends TextureView {
     };
 
 
-
     /**
      * Given {@code choices} of {@code Size}s supported by a camera, choose the smallest one that
      * is at least as large as the respective texture view size, and that is at most as large as the
@@ -663,6 +662,9 @@ public class CameraTextureView extends TextureView {
      * Stops the background thread and its {@link Handler}.
      */
     private void stopBackgroundThread() {
+        if (mBackgroundThread == null) {
+            startBackgroundThread();
+        }
         mBackgroundThread.quitSafely();
         try {
             mBackgroundThread.join();

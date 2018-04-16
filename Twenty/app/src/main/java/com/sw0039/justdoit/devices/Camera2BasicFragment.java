@@ -62,6 +62,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.sw0039.justdoit.R;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;

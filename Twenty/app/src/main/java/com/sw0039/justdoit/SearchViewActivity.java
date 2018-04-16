@@ -9,6 +9,8 @@ import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.Toast;
 
+import com.sw0039.justdoit.R;
+
 /**
  * 测试搜索控件的，包括搜索图标，输入框，清除内容按钮，搜索按钮。
  */

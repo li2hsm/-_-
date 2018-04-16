@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.sw0039.justdoit.R;
 import com.sw0039.justdoit.utils.ActionTools;
 
 import java.util.ArrayList;

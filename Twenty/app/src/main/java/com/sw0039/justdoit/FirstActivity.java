@@ -2,6 +2,8 @@ package com.sw0039.justdoit;
 
 import android.os.Bundle;
 
+import com.sw0039.justdoit.R;
+
 /**
  * 首页
  */
