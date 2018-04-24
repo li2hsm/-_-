@@ -35,6 +35,7 @@ public class CameraActivity extends BaseHSMActivity implements View.OnClickListe
 
     private ImageView mCaptureImage;
     private CameraTextureView mCameraTextureView;
+    private boolean isFirstLoad = true;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -103,11 +104,14 @@ public class CameraActivity extends BaseHSMActivity implements View.OnClickListe
         }
     }
 
-//    @Override
-//    protected void onResume() {
-//        super.onResume();
-//        mCameraTextureView.onResume();
-//    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if(!isFirstLoad){
+            mCameraTextureView.onResume();
+        }
+        isFirstLoad = false;
+    }
 
     @Override
     protected void onPause() {

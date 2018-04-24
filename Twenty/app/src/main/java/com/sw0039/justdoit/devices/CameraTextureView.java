@@ -304,7 +304,6 @@ public class CameraTextureView extends TextureView {
                 activity.finish();
             }
         }
-
     };
 
     /**
