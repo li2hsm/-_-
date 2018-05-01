@@ -3,9 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.sw0039.justdoit">
 
-    <!--camera2使用到的权限-->
+    <!-- camera2使用到的权限 -->
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
@@ -21,13 +22,13 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:name="com.sw0039.justdoit.MyApplication"
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.sw0039.justdoit.FirstActivity">
+        <activity android:name=".FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,89 +37,89 @@
         </activity>
 
         <!-- 第二章的部分 -->
-        <activity android:name="com.sw0039.justdoit.chapters02.TestMenuActivity" />
-        <activity android:name="com.sw0039.justdoit.chapters02.TestEventsActivity" />
-        <activity android:name="com.sw0039.justdoit.chapters02.fragments.TestFragmentActivity" />
-        <activity android:name="com.sw0039.justdoit.chapters02.Chapter02Activity" />
-        <activity android:name="com.sw0039.justdoit.chapters02.CodeViewActivity" />
-        <activity android:name="com.sw0039.justdoit.chapters02.CustomViewActivity" />
-        <activity android:name="com.sw0039.justdoit.chapters02.ImageViewActivity" />
-        <activity android:name="com.sw0039.justdoit.chapters02.AbsoluteLayoutTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.FrameLayoutTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.GridLayoutTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.LinearLayoutTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.RelativeLayoutTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.TableLayoutTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.ButtonTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.CheckButtonTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.ChronometerTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.ClockTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.InputUI" />
-        <activity android:name="com.sw0039.justdoit.chapters02.NinePatchTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.TextViewTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.TextViewTest2" />
-        <activity android:name="com.sw0039.justdoit.chapters02.ToggleButtonTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.ImageButtonTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.ImageViewTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.QuickContactBadgeTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.AdapterViewFlipperTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.ArrayAdapterTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.AutoCompleteTextViewTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.BaseAdapterTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.ExpandableListViewTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.ListActivityTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.SimpleAdapterTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.SimpleListViewTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.SpinnerTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.StackViewTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.actionbars.ProgressBarTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.actionbars.RatingBarTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.actionbars.SeekBarTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.actionbars.TitleProgressBar" />
-        <activity android:name="com.sw0039.justdoit.chapters02.actionbars.AnimationDrawableActivity" />
-        <activity android:name="com.sw0039.justdoit.chapters02.events.MainActivity" />
-        <activity android:name="com.sw0039.justdoit.chapters02.events.SendSmsActivity" />
-        <activity android:name="com.sw0039.justdoit.chapters02.ImageSwitcherTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.TextSwitcherTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.ViewFlipperTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.ViewSwitcherTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.CalendarViewTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.ChooseDate" />
-        <activity android:name="com.sw0039.justdoit.chapters02.NotificationTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.OtherActivity" />
-        <activity android:name="com.sw0039.justdoit.chapters02.NumberPickerTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.ScrollViewTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.SearchViewTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.TabHostTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.ToastTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.AlertDialogTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.DateDialogTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.DialogTheme" />
-        <activity android:name="com.sw0039.justdoit.chapters02.PopupWindowTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.ProgressDialogTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.menus.ActivityMenu" />
-        <activity android:name="com.sw0039.justdoit.chapters02.menus.ContextMenuTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.menus.MenuResTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.menus.MenuTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.menus.PopupMenuTest" />
-        <activity android:name="com.sw0039.justdoit.chapters02.ActionBar_DropDownNav" />
-        <activity android:name="com.sw0039.justdoit.chapters02.ActionBar_SwipeNav" />
-        <activity android:name="com.sw0039.justdoit.chapters02.TestActionBarActivity" />
-        <activity android:name="com.sw0039.justdoit.fours_zujian.HSScreanActivity" />
-        <activity android:name="com.sw0039.justdoit.fours_zujian.FoursSubActivity" />
-        <activity android:name="com.sw0039.justdoit.questions.AllQuestionsActivity" />
-        <activity android:name="com.sw0039.justdoit.questions.JsonErrorActivity" />
-        <activity android:name="com.sw0039.justdoit.QuickContactBadgeActivity" />
-        <activity android:name="com.sw0039.justdoit.SearchViewActivity" />
-        <activity android:name="com.sw0039.justdoit.MenuActivity" />
-        <activity android:name="com.sw0039.justdoit.BaseCenterTextActivity" />
-        <activity android:name="com.sw0039.justdoit.fours_zujian.IntentActivity" />
-        <activity android:name="com.sw0039.justdoit.questions.JavaCirculateDoubleActivity" />
-        <activity android:name="com.sw0039.justdoit.fours_zujian.IntentChildActivity" />
-        <activity android:name="com.sw0039.justdoit.fours_zujian.LaunchModeActivity" />
+        <activity android:name=".chapters02.TestMenuActivity" />
+        <activity android:name=".chapters02.TestEventsActivity" />
+        <activity android:name=".chapters02.fragments.TestFragmentActivity" />
+        <activity android:name=".chapters02.Chapter02Activity" />
+        <activity android:name=".chapters02.CodeViewActivity" />
+        <activity android:name=".chapters02.CustomViewActivity" />
+        <activity android:name=".chapters02.ImageViewActivity" />
+        <activity android:name=".chapters02.AbsoluteLayoutTest" />
+        <activity android:name=".chapters02.FrameLayoutTest" />
+        <activity android:name=".chapters02.GridLayoutTest" />
+        <activity android:name=".chapters02.LinearLayoutTest" />
+        <activity android:name=".chapters02.RelativeLayoutTest" />
+        <activity android:name=".chapters02.TableLayoutTest" />
+        <activity android:name=".chapters02.ButtonTest" />
+        <activity android:name=".chapters02.CheckButtonTest" />
+        <activity android:name=".chapters02.ChronometerTest" />
+        <activity android:name=".chapters02.ClockTest" />
+        <activity android:name=".chapters02.InputUI" />
+        <activity android:name=".chapters02.NinePatchTest" />
+        <activity android:name=".chapters02.TextViewTest" />
+        <activity android:name=".chapters02.TextViewTest2" />
+        <activity android:name=".chapters02.ToggleButtonTest" />
+        <activity android:name=".chapters02.ImageButtonTest" />
+        <activity android:name=".chapters02.ImageViewTest" />
+        <activity android:name=".chapters02.QuickContactBadgeTest" />
+        <activity android:name=".chapters02.AdapterViewFlipperTest" />
+        <activity android:name=".chapters02.ArrayAdapterTest" />
+        <activity android:name=".chapters02.AutoCompleteTextViewTest" />
+        <activity android:name=".chapters02.BaseAdapterTest" />
+        <activity android:name=".chapters02.ExpandableListViewTest" />
+        <activity android:name=".chapters02.ListActivityTest" />
+        <activity android:name=".chapters02.SimpleAdapterTest" />
+        <activity android:name=".chapters02.SimpleListViewTest" />
+        <activity android:name=".chapters02.SpinnerTest" />
+        <activity android:name=".chapters02.StackViewTest" />
+        <activity android:name=".chapters02.actionbars.ProgressBarTest" />
+        <activity android:name=".chapters02.actionbars.RatingBarTest" />
+        <activity android:name=".chapters02.actionbars.SeekBarTest" />
+        <activity android:name=".chapters02.actionbars.TitleProgressBar" />
+        <activity android:name=".chapters02.actionbars.AnimationDrawableActivity" />
+        <activity android:name=".chapters02.events.MainActivity" />
+        <activity android:name=".chapters02.events.SendSmsActivity" />
+        <activity android:name=".chapters02.ImageSwitcherTest" />
+        <activity android:name=".chapters02.TextSwitcherTest" />
+        <activity android:name=".chapters02.ViewFlipperTest" />
+        <activity android:name=".chapters02.ViewSwitcherTest" />
+        <activity android:name=".chapters02.CalendarViewTest" />
+        <activity android:name=".chapters02.ChooseDate" />
+        <activity android:name=".chapters02.NotificationTest" />
+        <activity android:name=".chapters02.OtherActivity" />
+        <activity android:name=".chapters02.NumberPickerTest" />
+        <activity android:name=".chapters02.ScrollViewTest" />
+        <activity android:name=".chapters02.SearchViewTest" />
+        <activity android:name=".chapters02.TabHostTest" />
+        <activity android:name=".chapters02.ToastTest" />
+        <activity android:name=".chapters02.AlertDialogTest" />
+        <activity android:name=".chapters02.DateDialogTest" />
+        <activity android:name=".chapters02.DialogTheme" />
+        <activity android:name=".chapters02.PopupWindowTest" />
+        <activity android:name=".chapters02.ProgressDialogTest" />
+        <activity android:name=".chapters02.menus.ActivityMenu" />
+        <activity android:name=".chapters02.menus.ContextMenuTest" />
+        <activity android:name=".chapters02.menus.MenuResTest" />
+        <activity android:name=".chapters02.menus.MenuTest" />
+        <activity android:name=".chapters02.menus.PopupMenuTest" />
+        <activity android:name=".chapters02.ActionBar_DropDownNav" />
+        <activity android:name=".chapters02.ActionBar_SwipeNav" />
+        <activity android:name=".chapters02.TestActionBarActivity" />
+        <activity android:name=".fours_zujian.HSScreanActivity" />
+        <activity android:name=".fours_zujian.FoursSubActivity" />
+        <activity android:name=".questions.AllQuestionsActivity" />
+        <activity android:name=".questions.JsonErrorActivity" />
+        <activity android:name=".QuickContactBadgeActivity" />
+        <activity android:name=".SearchViewActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".BaseCenterTextActivity" />
+        <activity android:name=".fours_zujian.IntentActivity" />
+        <activity android:name=".questions.JavaCirculateDoubleActivity" />
+        <activity android:name=".fours_zujian.IntentChildActivity" />
+        <activity android:name=".fours_zujian.LaunchModeActivity" />
         <!-- intent的使用实例 -->
-        <activity android:name="com.sw0039.justdoit.fours_zujian.intents.ActionAttr.MainActivity" />
-        <activity android:name="com.sw0039.justdoit.fours_zujian.intents.ActionAttr.SecondActivity">
+        <activity android:name=".fours_zujian.intents.ActionAttr.MainActivity" />
+        <activity android:name=".fours_zujian.intents.ActionAttr.SecondActivity">
             <intent-filter>
 
                 <!-- 指定该Activity能响应Action为指定字符串的Intent -->
@@ -129,10 +130,10 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.sw0039.justdoit.BaseBtnTextActivity" />
+        <activity android:name=".BaseBtnTextActivity" />
 
         <!-- 测试intent的测试规则 -->
-        <activity android:name="com.sw0039.justdoit.fours_zujian.TestIntentChildActivity">
+        <activity android:name=".fours_zujian.TestIntentChildActivity">
 
             <!-- 操作的规则测试 -->
             <!-- 1,要通过此过滤器，您在 Intent 中指定的操作必须与过滤器中列出的某一操作匹配。 -->
@@ -220,57 +221,64 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.sw0039.justdoit.questions.ScrollviewListviewActivity"
+            android:name=".questions.ScrollviewListviewActivity"
             android:theme="@style/activity_dialog" />
         <activity
-            android:name="com.sw0039.justdoit.questions.ScrollviewListview1Activity"
+            android:name=".questions.ScrollviewListview1Activity"
             android:theme="@style/activity_dialog" />
-        <activity android:name="com.sw0039.justdoit.questions.RMBSymbolActivity" />
+        <activity android:name=".questions.RMBSymbolActivity" />
         <activity
-            android:name="com.sw0039.justdoit.chapters02.fragments.savedata.ConfigChangesTestActivity"
+            android:name=".chapters02.fragments.savedata.ConfigChangesTestActivity"
             android:configChanges="screenSize|orientation" />
-        <activity android:name="com.sw0039.justdoit.chapters02.fragments.savedata.FixProblemsActivity" />
-        <activity android:name="com.sw0039.justdoit.chapters02.fragments.savedata.FragmentRetainDataActivity" />
-        <activity android:name="com.sw0039.justdoit.chapters02.fragments.savedata.HomeActivity" />
-        <activity android:name="com.sw0039.justdoit.chapters02.fragments.savedata.SavedInstanceStateUsingActivity" />
-        <activity android:name="com.sw0039.justdoit.shape_drawables.ShareDrawableActivity" />
-        <activity android:name="com.sw0039.justdoit.shape_drawables.ShapeDrawableTest" />
-        <activity android:name="com.sw0039.justdoit.shape_drawables.ClipDrawableTest" />
-        <activity android:name="com.sw0039.justdoit.shape_drawables.AnimationDrawable" />
-        <activity android:name="com.sw0039.justdoit.shape_drawables.AttributeAnimDrawable" />
-        <activity android:name="com.sw0039.justdoit.shape_drawables.XmlResTest" />
-        <activity android:name="com.sw0039.justdoit.shape_drawables.AttrResTest" />
-        <activity android:name="com.sw0039.justdoit.deal_bitmaps.BitmapTest" />
-        <activity android:name="com.sw0039.justdoit.deal_bitmaps.DealBitmapActivity" />
-        <activity android:name="com.sw0039.justdoit.deal_bitmaps.CanvasTest" />
-        <activity android:name="com.sw0039.justdoit.deal_bitmaps.PathTest" />
-        <activity android:name="com.sw0039.justdoit.deal_bitmaps.HandDraw" />
-        <activity android:name="com.sw0039.justdoit.deal_bitmaps.PathSaveRestoreTest" />
-        <activity android:name="com.sw0039.justdoit.deal_bitmaps.PathText" />
-        <activity android:name="com.sw0039.justdoit.deal_bitmaps.PinBall" />
-        <activity android:name="com.sw0039.justdoit.deal_bitmaps.ShaderTest" />
-        <activity android:name="com.sw0039.justdoit.deal_bitmaps.FatPo" />
-        <activity android:name="com.sw0039.justdoit.deal_bitmaps.TweenAnim" />
-        <activity android:name="com.sw0039.justdoit.deal_bitmaps.Butterfly" />
-        <activity android:name="com.sw0039.justdoit.deal_bitmaps.ListViewTween" />
-        <activity android:name="com.sw0039.justdoit.deal_bitmaps.SurfaceViewTest" />
-        <activity android:name="com.sw0039.justdoit.deal_bitmaps.ShowWave" />
-        <activity android:name="com.sw0039.justdoit.anims.TestAnimationActivity" />
-        <activity android:name="com.sw0039.justdoit.anims.FrameAnimation" />
-        <activity android:name="com.sw0039.justdoit.anims.TweenAnimation" />
-        <activity android:name="com.sw0039.justdoit.anims.ObjectAnimationActivity" />
-        <activity android:name="com.sw0039.justdoit.anims.ValueAnimationActivity" />
-        <activity android:name="com.sw0039.justdoit.anims.CodeObjectAnimActivity" />
-        <activity android:name="com.sw0039.justdoit.anims.XMLAnimatorActivity" />
-        <activity android:name="com.sw0039.justdoit.questions.address_selector.ShowAddressSelectorActivity" />
-        <activity android:name="com.sw0039.justdoit.questions.checkboxs.TestCheckBoxActivity" />
-        <activity android:name="com.sw0039.justdoit.io.TestFileActivity" />
-        <activity android:name="com.sw0039.justdoit.io.TestIOActivity" />
-        <activity android:name="com.sw0039.justdoit.android_8.TestAndroid8TXActivity" />
-        <activity android:name="com.sw0039.justdoit.io.TestDBActivity" />
-        <activity android:name="com.sw0039.justdoit.io.TestTTSActivity" />
-        <activity android:name="com.sw0039.justdoit.devices.TestDevicesActivity"></activity>
-        <activity android:name="com.sw0039.justdoit.devices.CameraActivity"></activity>
+        <activity android:name=".chapters02.fragments.savedata.FixProblemsActivity" />
+        <activity android:name=".chapters02.fragments.savedata.FragmentRetainDataActivity" />
+        <activity android:name=".chapters02.fragments.savedata.HomeActivity" />
+        <activity android:name=".chapters02.fragments.savedata.SavedInstanceStateUsingActivity" />
+        <activity android:name=".shape_drawables.ShareDrawableActivity" />
+        <activity android:name=".shape_drawables.ShapeDrawableTest" />
+        <activity android:name=".shape_drawables.ClipDrawableTest" />
+        <activity android:name=".shape_drawables.AnimationDrawable" />
+        <activity android:name=".shape_drawables.AttributeAnimDrawable" />
+        <activity android:name=".shape_drawables.XmlResTest" />
+        <activity android:name=".shape_drawables.AttrResTest" />
+        <activity android:name=".deal_bitmaps.BitmapTest" />
+        <activity android:name=".deal_bitmaps.DealBitmapActivity" />
+        <activity android:name=".deal_bitmaps.CanvasTest" />
+        <activity android:name=".deal_bitmaps.PathTest" />
+        <activity android:name=".deal_bitmaps.HandDraw" />
+        <activity android:name=".deal_bitmaps.PathSaveRestoreTest" />
+        <activity android:name=".deal_bitmaps.PathText" />
+        <activity android:name=".deal_bitmaps.PinBall" />
+        <activity android:name=".deal_bitmaps.ShaderTest" />
+        <activity android:name=".deal_bitmaps.FatPo" />
+        <activity android:name=".deal_bitmaps.TweenAnim" />
+        <activity android:name=".deal_bitmaps.Butterfly" />
+        <activity android:name=".deal_bitmaps.ListViewTween" />
+        <activity android:name=".deal_bitmaps.SurfaceViewTest" />
+        <activity android:name=".deal_bitmaps.ShowWave" />
+        <activity android:name=".anims.TestAnimationActivity" />
+        <activity android:name=".anims.FrameAnimation" />
+        <activity android:name=".anims.TweenAnimation" />
+        <activity android:name=".anims.ObjectAnimationActivity" />
+        <activity android:name=".anims.ValueAnimationActivity" />
+        <activity android:name=".anims.CodeObjectAnimActivity" />
+        <activity android:name=".anims.XMLAnimatorActivity" />
+        <activity android:name=".questions.address_selector.ShowAddressSelectorActivity" />
+        <activity android:name=".questions.checkboxs.TestCheckBoxActivity" />
+        <activity android:name=".io.TestFileActivity" />
+        <activity android:name=".io.TestIOActivity" />
+        <activity android:name=".android_8.TestAndroid8TXActivity" />
+        <activity android:name=".io.TestDBActivity" />
+        <activity android:name=".io.TestTTSActivity" />
+        <activity android:name=".devices.TestDevicesActivity" />
+        <activity android:name=".devices.CameraActivity" />
+        <activity android:name=".fours_zujian.services.TestLocalBindServiceActivity" />
+        <activity android:name=".fours_zujian.services.TestMuiltLocalBindServiceActivity" />
+
+        <service android:name=".fours_zujian.services.NormalServices" />
+        <service android:name=".fours_zujian.services.CustomIntentServices" />
+
+        <activity android:name=".fours_zujian.services.TestIntentServiceActivity"></activity>
     </application>
 
 </manifest>

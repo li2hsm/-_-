@@ -126,12 +126,16 @@
         <item>IntentActivity   - Intent与过滤器</item>
         <item>LaunchModeActivity   - 四种启动模式</item>
         <item>Intent:MainActivity   - 启动一个自定义action的activity</item>
+        <item>services.TestLocalBindServiceActivity   - 测试绑定本地服务</item>
+        <item>services.TestIntentServiceActivity   - 测试IntentService服务</item>
     </string-array>
     <string-array name="fours_action_list">
         <item>fours_zujian.HSScreanActivity</item>
         <item>fours_zujian.IntentActivity</item>
         <item>fours_zujian.LaunchModeActivity</item>
         <item>fours_zujian.intents.ActionAttr.MainActivity</item>
+        <item>fours_zujian.services.TestLocalBindServiceActivity</item>
+        <item>fours_zujian.services.TestIntentServiceActivity</item>
     </string-array>
 
     <!--第二章-->
