@@ -278,7 +278,9 @@
         <service android:name=".fours_zujian.services.NormalServices" />
         <service android:name=".fours_zujian.services.CustomIntentServices" />
 
-        <activity android:name=".fours_zujian.services.TestIntentServiceActivity"></activity>
+        <activity android:name=".fours_zujian.services.TestIntentServiceActivity" />
+        <activity android:name=".fours_zujian.BroadcastReceivers.TestAdressListActivity"></activity>
+
     </application>
 
 </manifest>
